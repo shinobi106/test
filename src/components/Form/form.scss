@@ -1,0 +1,72 @@
+.form{
+    font-family: 'Poppins', sans-serif;
+    
+    form{
+      h1{
+         color: white;
+         font-family: sans-serif;
+         margin-bottom: 40px;
+         font-size: 30px;
+         font-weight: 600;
+      }
+
+      .btn{
+         p{
+            color: white;
+           
+            span{
+               color: rgb(229, 7, 181);
+               cursor: pointer;
+            }
+         }
+         button{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            background-image: linear-gradient(to right, rgb(255, 0, 0) , rgb(250, 1, 254));
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: all .5s ease;
+
+            &:hover{
+              
+               transform: scale(1.03);
+            }
+         }
+      }
+
+      .back{
+         display: flex;
+         margin-top: 60px;
+         align-items: center;
+         cursor: pointer;
+         
+         button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            text-align: center;
+            .icon{
+               width: 20px;
+            }
+            width: 35px;
+            height: 35px;
+            background-color: transparentize($color: #424242, $amount: 0.7);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 7px;
+            color: gray;
+            margin-right: 10px;
+         }
+         p{
+            color: white;
+            font-weight: 400;
+         }
+      }
+       
+    }
+
+}

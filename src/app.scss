@@ -1,0 +1,96 @@
+.App{
+    font-family: 'Poppins', sans-serif;
+    
+    .container{
+        display: flex;
+        height: 100vh;
+        
+        img{
+            width: 179px;
+            height: 193px;
+            background: transparent;
+            transform: scale(1.5);
+            margin-left: 40px;
+            margin-top: -10px;
+            margin-bottom: -15px;
+            cursor: pointer;
+        }
+        .form{
+           justify-content: center;
+            display: flex;
+            z-index: 1000;
+        }
+        
+        .left{
+            flex: 1;
+            position: relative;
+            background-color: rgb(18, 2, 2);
+            overflow: hidden;
+            
+            background-image: linear-gradient(to bottom right, #510f00, rgb(18, 1, 65));
+                        
+           
+           
+        }
+
+        .right{
+            background-color: #0A1118;
+            flex: 2;
+            z-index: 1;
+
+            .content{
+                margin-left: 54px;
+                margin-top: 64px;
+                width: 350px;
+                position: relative;
+                
+                h1{
+                    color: white;
+                    font-size: 20px;
+                     
+                    span{
+                        background-image: linear-gradient(to right, rgb(255, 0, 0) , rgb(250, 1, 254));
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+                ul{
+                    color: rgb(154, 152, 152);
+                    list-style-type: circle;
+                    font-size: 14px;
+                }
+                img{
+                    position: absolute;
+                    transform: scale(0.58);
+                    right: -30px;
+                    bottom: 0px;
+                }
+            }
+
+            .images{
+                position: relative;
+                
+                .back{
+                    position: absolute;
+                    width: 60%;
+                    height: 500px;
+                    right: 140px;
+                    top: 80px;
+                   
+                }
+                .main{
+                    position: absolute;
+                    
+                    width: 40%;
+                    height: 320px;
+                    right: 105px;
+                    top: 140px;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        transform: scale(1.55);
+                    }
+                }
+            }
+        }
+    }
+}
