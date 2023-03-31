@@ -10,12 +10,12 @@ export const Input = ({type, contact}) => {
           <span>Sent on: {contact} </span>
           </div>
           <div className='otp'>
-          <input type="text" id='1' name='1digit'/>
-          <input type="text" id='2' name='2digit'/>
-          <input type="text" id='3' name='3digit'/>
-          <input type="text" id='4' name='4digit'/>
-          <input type="text" id='5' name='5digit'/>
-          <input type="text" id='6' name='6digit'/>
+          <input type="text" maxLength="1" id='1' name='1digit'/>
+          <input type="text" maxLength="1" id='2' name='2digit'/>
+          <input type="text" maxLength="1" id='3' name='3digit'/>
+          <input type="text" maxLength="1" id='4' name='4digit'/>
+          <input type="text" maxLength="1" id='5' name='5digit'/>
+          <input type="text" maxLength="1" id='6' name='6digit'/>
           </div>
         </div>
     </div>
